@@ -30,6 +30,6 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Deploy war to tomcat
-      run: curl -v -u admin:admin -T /home/runner/work/etoe/etoe/target/Ecomm.war 'http://3.110.168.193:8080/manager/text/deploy?path=%2FEcomm'
+      run: curl -v -u admin:admin -T /home/runner/work/etoe/etoe/target/Ecomm.war 'http://13.233.157.82/:8080/manager/text/deploy?path=/Ecomm.war'
 
   
