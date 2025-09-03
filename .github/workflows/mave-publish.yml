@@ -1,0 +1,17 @@
+name: Ecommapp
+on:
+  push:
+    branches: ["master"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: action/checkout@v4
+      name: setup jdk 17
+    - uses: actions/setup-java@v4
+      with:
+       java-version: '17'
+       distribution: 'temurin'
+       cache: maven
+    - name: Build with maven
+      run: mvn -B packages --file pom.xml
