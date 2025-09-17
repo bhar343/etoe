@@ -51,48 +51,7 @@
             <artifactId>tomcat7-maven-plugin</artifactId>
             <version>2.2</version>
             <configuration>
-              <url>http://13.203.74.58:8080/manager/text</url>
-              <server>apache-tomcat</server>
-              <username>admin</username>
-              <password>admin</password>
-              <path>/Ecomm</path>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-
-    <profile>
-      <id>qa</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.tomcat.maven</groupId>
-            <artifactId>tomcat7-maven-plugin</artifactId>
-            <version>2.2</version>
-            <configuration>
-              <url>http://13.203.194.73:8080/manager/text</url>
-              <server>apache-tomcat</server>
-              <username>admin</username>
-              <password>admin</password>
-              <path>/Ecomm</path>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-
-
-<profile>
-      <id>prod</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.tomcat.maven</groupId>
-            <artifactId>tomcat7-maven-plugin</artifactId>
-            <version>2.2</version>
-            <configuration>
-              <url>http://13.203.212.201:8080/manager/text</url>
+              <url>http://13.204.82.13:8080/manager/text</url>
               <server>apache-tomcat</server>
               <username>admin</username>
               <password>admin</password>
